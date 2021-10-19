@@ -19,9 +19,10 @@ humain_name = gets.chomp
 my_game = Game.new(humain_name)
 my_game.show_players
 puts "\n####Le combat commence !###"
-while my_game.is_still_ongoing?
+gets.chomp
+while my_game.is_still_ongoing == true
     my_game.menu
-    prints "=> "
+    print "=> "
     choice = gets.chomp
     my_game.menu_choice(choice)
     my_game.enemies_attack

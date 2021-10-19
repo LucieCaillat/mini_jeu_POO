@@ -35,7 +35,7 @@ class Player
     def attacks(other_player)
         puts "\n #{@name} attaque #{other_player.name} ! "
         damage = compute_damage.to_i
-        puts " Il vient d'infliger #{damage} points de dommages."
+        puts "#{@name} vient d'infliger #{damage} points de dommages."
         other_player.gets_damage(damage) 
     end
 
@@ -59,7 +59,7 @@ class HumanPlayer < Player
     end
 
     def show_state
-        puts "\n tu as #{@life_points} points de vie et une arme de niveau #{@weapon_level}"
+        puts "\n Tu as #{@life_points} points de vie et une arme de niveau #{@weapon_level}"
     end
 
     def search_weapon

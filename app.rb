@@ -8,8 +8,8 @@ require_relative 'lib/game'
 player1 = Player.new("One")
 player2 = Player.new("Two")
 puts " A ma droite nous avons #{player1.name}\n Et à ma gauche nous avons #{player2.name}"
-puts "\nvoici l'état de nos deux joueurs :"
-player1.show_state
+puts "\nvoici "
+player1.show_statel'état de nos deux joueurs :
 player2.show_state
 puts "\n\#####le combat va commencer !!!! #####"
 while player1.life_points != 0 && player2.life_points != 0
